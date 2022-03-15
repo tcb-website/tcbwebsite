@@ -133,7 +133,7 @@ body{
 }
 #text, li{
   color: rgb(155, 190, 223);
-  text-align: left;
+  text-align: center;
   font-family: 'Courier New', Courier, monospace;
 
 }
@@ -198,7 +198,7 @@ article {
   /* margin-top: 200vmin; */
   padding-top: 80px;
   text-align: left;
-  line-height: 1.35;
+  line-height: 1.00;
   max-inline-size:100%;
   font-size: 25px;
   float:left;
@@ -223,6 +223,12 @@ canvas {
   z-index: 10;
 }
 
+@media screen and (max-width : 400px) {
+  .content{
+    text-align: center;
+    width: 71%;
+  }
+}
 #inside {
   position: absolute; 
   z-index: 10;
