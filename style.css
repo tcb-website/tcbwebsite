@@ -29,7 +29,7 @@ body{
 
 #navbar a {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 25px;
+  font-size: 30px;
   text-decoration:none;
   text-align: center;
   color: rgb(155, 190, 223);
@@ -39,13 +39,14 @@ body{
 #navbar a :hover{
   color: white;
   text-decoration:double;
- 
+  font-size: 35px;
   text-align: center; 
 }
 
 #heading{
   position: relative;
-  letter-spacing: 15px;
+  letter-spacing: 17px;
+  font-size: 60px;
   font-family: 'Courier New', Courier, monospace;
   text-transform: uppercase;
   width: 100%;
@@ -80,7 +81,7 @@ body{
   font-size: medium;
   text-transform: uppercase;
   text-align: center;
-  border: 2px solid rgb(153, 177, 199);
+  border: 11px solid rgb(153, 177, 199);
   border-radius: 10px;
   padding: 3%;
   box-shadow:  0 0 10px #698399, 0 0 40px  #576d80 , 0 0 80px #407daf;
