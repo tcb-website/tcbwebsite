@@ -1,3 +1,6 @@
+
+/*-------Homepage-----*/
+
 body{
   padding: 4%;
   background-color: rgb(8, 39, 68);
@@ -11,6 +14,7 @@ body{
   background-color: rgb(14, 28, 49);
   align-items: center;   
 }
+
 #navbar li {
   padding: 20px;
   display: inline;
@@ -18,105 +22,119 @@ body{
   position: relative;
   font-size: 1em;
   letter-spacing: 10px;
-  color: #0e3742;
   animation: none;
   width: 100%;
   text-align: center;
- 
 }
 
 #navbar a {
   font-family: 'Courier New', Courier, monospace;
-  color:rgb(97, 132, 172);
   font-size: 25px;
   text-decoration:none;
   text-align: center;
-  
+  color: rgb(155, 190, 223);
+  text-shadow:  0 0 10px #f7f9fc, 0 0 40px  #9fa5aa , 0 0 80px #7c939b;
 }
+
 #navbar a :hover{
   color: white;
   text-decoration:double;
   font-size: 30px;
   text-align: center; 
 }
-#h{
-  width: 400px;
-  height: 400px;
-  padding-bottom: 2%;
-  padding-left: 6%;
-  
- 
-}
-#head{
- 
+
+#heading{
   position: relative;
-  font-size: 2em;
   letter-spacing: 15px;
-  color:rgb(234, 237, 240);
+  font-family: 'Courier New', Courier, monospace;
   text-transform: uppercase;
   width: 100%;
   text-align: center;
-  text-shadow:  0 0 10px #a6b3c0, 0 0 40px  #244058 , 0 0 80px #051e33;
- 
-
+  outline: none;;
+  color: rgb(155, 190, 223);
+  text-shadow:  0 0 10px #8d939c, 0 0 40px  #344553 , 0 0 80px #50707a;
+  
 }
 
+#img{
+  width: 400px;
+  height: 400px;
+  margin-top: 0;
+  padding-bottom: 2%;
+  padding-left: 6%;
+}
 
-#re{
-  color: #305c80;
+#box1{
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(155, 190, 223);
   position: relative;
   font-size: medium;
-  letter-spacing: 15px;
   text-transform: uppercase;
   text-align: center;
-  -webkit-box-reflect:
-  linear-gradient(transparent,rgb(9, 26, 46));
-  outline: none;
-  animation: animate 5s linear infinite;
-}
-@keyframes animate {
-  0%,18%,20%,50%,60%,65%,80%,90%,92% {
-      color: #0e3742;
-      text-shadow: none;
-  }
-  18%,20%,50%,60%,65%,80%,90%,92%,100% {
-      color: white;
-      text-shadow: 0 0 10px #03bcf4,
-                  0 0 20px #03bcf4,
-                  0 0 40px #03bcf4,
-                  0 0 80px #03bcf4,
-                  0 0 160px #03bcf4;
-  }
-}
-
-
-a{
-  text-decoration: none;
-  color: white;
-  -webkit-box-reflect:
-  linear-gradient(transparent,rgb(9, 26, 46));
-  outline: none;
-  animation: animate 3s linear infinite;
-}
-a :hover{
-  color: rgb(73, 120, 173);
-  
-  text-align: center; 
-}
-#ac{
-  text-decoration: none;
-  color: white;
-  background-color: rgb(6, 25, 49);
-  border: 2px solid rgb(52, 62, 82);
+  border: 2px solid rgb(153, 177, 199);
+  border-radius: 10px;
+  padding: 3%;
   box-shadow:  0 0 10px #698399, 0 0 40px  #576d80 , 0 0 80px #407daf;
-width: 60%;
-padding: 3%;
+  width: 70%;
+}
 
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #eeeeee, 0 0 20px #faf5f5, 0 0 30px #000000, 0 0 40px #000000, 
+                 0 0 50px #143964, 0 0 60px #355c88, 0 0 70px #b0a5b6;
+  }
+  to {
+    text-shadow: 0 0 20px #eeeeee, 0 0 30px #859bb4, 0 0 40px #455d91, 0 0 50px #bec4c9,
+                 0 0 60px #1a3547, 0 0 70px #112946, 0 0 80px #667992;
+  }
+}
+#box1 a {
+  background-color: #102f47;
+  text-decoration: none;
+  color: rgb(132, 156, 168);
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+#box1 a :hover{
+  color: #102f47;
+  background-color: #407daf;
+
+}
+
+/*--------registration page--------------------------*/
+
+#anim{
+  padding: 1%;
+
+}
+
+.rb{
+
+  padding: 1%;
+  width: 60%;
   
 }
-.box3{
-  padding: 10%;
-  border: 2px;
-  border-color: white;
+#text, li{
+  color: rgb(155, 190, 223);
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+h3{
+  color: rgb(155, 190, 223);
+  text-shadow:  0 0 10px #8d939c, 0 0 40px  #344553 , 0 0 80px #50707a;
+}
+
+#link{
+  font-size: 2rem;
+ 
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  text-decoration: none;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
 
 }
