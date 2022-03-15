@@ -1,0 +1,122 @@
+body{
+  padding: 4%;
+  background-color: rgb(8, 39, 68);
+}
+
+#main{
+  box-shadow:  0 0 10px #698399, 0 0 40px  #576d80 , 0 0 80px #407daf;
+  transition-delay: 0.75s;
+  height: 700px;
+  border-radius: 3%;
+  background-color: rgb(14, 28, 49);
+  align-items: center;   
+}
+#navbar li {
+  padding: 20px;
+  display: inline;
+  list-style-type: none; 
+  position: relative;
+  font-size: 1em;
+  letter-spacing: 10px;
+  color: #0e3742;
+  animation: none;
+  width: 100%;
+  text-align: center;
+ 
+}
+
+#navbar a {
+  font-family: 'Courier New', Courier, monospace;
+  color:rgb(97, 132, 172);
+  font-size: 25px;
+  text-decoration:none;
+  text-align: center;
+  
+}
+#navbar a :hover{
+  color: white;
+  text-decoration:double;
+  font-size: 30px;
+  text-align: center; 
+}
+#h{
+  width: 400px;
+  height: 400px;
+  padding-bottom: 2%;
+  padding-left: 6%;
+  
+ 
+}
+#head{
+ 
+  position: relative;
+  font-size: 2em;
+  letter-spacing: 15px;
+  color:rgb(234, 237, 240);
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  text-shadow:  0 0 10px #a6b3c0, 0 0 40px  #244058 , 0 0 80px #051e33;
+ 
+
+}
+
+
+#re{
+  color: #305c80;
+  position: relative;
+  font-size: medium;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-box-reflect:
+  linear-gradient(transparent,rgb(9, 26, 46));
+  outline: none;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0%,18%,20%,50%,60%,65%,80%,90%,92% {
+      color: #0e3742;
+      text-shadow: none;
+  }
+  18%,20%,50%,60%,65%,80%,90%,92%,100% {
+      color: white;
+      text-shadow: 0 0 10px #03bcf4,
+                  0 0 20px #03bcf4,
+                  0 0 40px #03bcf4,
+                  0 0 80px #03bcf4,
+                  0 0 160px #03bcf4;
+  }
+}
+
+
+a{
+  text-decoration: none;
+  color: white;
+  -webkit-box-reflect:
+  linear-gradient(transparent,rgb(9, 26, 46));
+  outline: none;
+  animation: animate 3s linear infinite;
+}
+a :hover{
+  color: rgb(73, 120, 173);
+  
+  text-align: center; 
+}
+#ac{
+  text-decoration: none;
+  color: white;
+  background-color: rgb(6, 25, 49);
+  border: 2px solid rgb(52, 62, 82);
+  box-shadow:  0 0 10px #698399, 0 0 40px  #576d80 , 0 0 80px #407daf;
+width: 60%;
+padding: 3%;
+
+  
+}
+.box3{
+  padding: 10%;
+  border: 2px;
+  border-color: white;
+
+}
