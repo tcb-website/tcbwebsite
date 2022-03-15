@@ -1,236 +1,282 @@
-
 /*-------Homepage-----*/
+
 html {
-  block-size: 100%;
-  inline-size: 100%;
-  text-align: center;
+    block-size: 100%;
+    inline-size: 100%;
+    text-align: center;
 }
 
-body{
-  padding: 4%;
-  background-color: rgb(8, 39, 68);
-  overflow-x: hidden;
+body {
+    background-color: rgb(8, 39, 68);
+    overflow-x: hidden;
 }
 
-#main{
-  box-shadow:  0 0 10px #698399, 0 0 40px  #576d80 , 0 0 80px #407daf;
-  transition-delay: 0.75s;
-  height: 700px;
-  border-radius: 3%;
-  background-color: rgb(14, 28, 49);
-  align-items: center;   
+.home-page {
+    padding: 4%;
+}
+
+.main {
+    box-shadow: 0 0 10px #698399, 0 0 40px #576d80, 0 0 80px #407daf;
+    transition-delay: 0.75s;
+    height: 100vh;
+    border-radius: 3%;
+    background-color: rgb(14, 28, 49);
+    align-items: center;
 }
 
 #navbar li {
-  padding: 20px;
-  display: inline;
-  list-style-type: none; 
-  position: relative;
-  font-size: 1em;
-  letter-spacing: 10px;
-  animation: none;
-  width: 100%;
-  text-align: center;
+    padding: 20px;
+    display: inline;
+    list-style-type: none;
+    position: relative;
+    font-size: 1em;
+    letter-spacing: 10px;
+    animation: none;
+    width: 100%;
+    text-align: center;
 }
 
 #navbar a {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 30px;
-  text-decoration:none;
-  text-align: center;
-  color: rgb(155, 190, 223);
-  text-shadow:  0 0 10px #f7f9fc, 0 0 40px  #9fa5aa , 0 0 80px #7c939b;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(155, 190, 223);
+    text-shadow: 0 0 10px #f7f9fc, 0 0 40px #9fa5aa, 0 0 80px #7c939b;
 }
 
-#navbar a :hover{
-  color: white;
-  text-decoration:double;
-  font-size: 35px;
-  text-align: center; 
+#navbar a :hover {
+    color: white;
+    text-decoration: double;
+    font-size: 35px;
+    text-align: center;
 }
 
-#heading{
-  position: relative;
-  letter-spacing: 17px;
-  font-size: 60px;
-  font-family: 'Courier New', Courier, monospace;
-  text-transform: uppercase;
-  width: 100%;
-  text-align: center;
-  outline: none;;
-  color: rgb(155, 190, 223);
-  text-shadow:  0 0 10px #8d939c, 0 0 40px  #344553 , 0 0 80px #50707a;
-  
-}
-#head2{
-  font-size: 2rem;
-  font-family: 'Courier New', Courier, monospace;
-  color: white;
-  text-decoration: none;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+#heading {
+    position: relative;
+    letter-spacing: 17px;
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    color: rgb(155, 190, 223);
+    text-shadow: 0 0 10px #8d939c, 0 0 40px #344553, 0 0 80px #50707a;
 }
 
-#img{
-  width: 400px;
-  height: 400px;
-  margin-top: 0;
-  padding-bottom: 2%;
-  padding-left: 6%;
+#head2 {
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-decoration: none;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
-#box1{
-  font-family: 'Courier New', Courier, monospace;
-  color: rgb(155, 190, 223);
-  position: relative;
-  font-size: medium;
-  text-transform: uppercase;
-  text-align: center;
-  border: 11px solid rgb(153, 177, 199);
-  border-radius: 10px;
-  padding: 3%;
-  box-shadow:  0 0 10px #698399, 0 0 40px  #576d80 , 0 0 80px #407daf;
-  width: 70%;
+.box {
+    display: flex;
+    height: max-content;
+    width: 100%;
+    margin-top: 6rem;
+}
+
+#img img {
+    padding-bottom: 2%;
+    padding-left: 6%;
+    object-fit: contain;
+    object-fit: contain;
+}
+
+#responsive-img {
+    height: 10vh;
+    width: 10vh;
+}
+
+#responsive-img img {
+    height: 49vh;
+    width: 29vw;
+    margin-left: 20px;
+}
+
+#box1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(155, 190, 223);
+    font-size: medium;
+    text-transform: uppercase;
+    text-align: center;
+    border: 11px solid rgb(153, 177, 199);
+    border-radius: 10px;
+    padding: 5%;
+    box-shadow: 0 0 10px #698399, 0 0 40px #576d80, 0 0 80px #407daf;
+    position: absolute;
+    right: 15vh;
+}
+
+@media screen and (max-width: 600px) {
+    #box1 {
+        /* margin: 0 auto; */
+        width: 70%;
+        right: -2.5vh;
+    }
+    .box {
+        flex-direction: column;
+    }
+    #img {
+        display: none;
+        /* width: 40vw;
+        height: 40vh; */
+    }
+    ul li {
+        font-size: 10px;
+        padding-top: 10px;
+    }
+    #heading {
+        font-size: 1.8rem;
+    }
+    .main {
+        width: 110vw;
+    }
+    .content {
+        text-align: center;
+    }
 }
 
 @-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #eeeeee, 0 0 20px #faf5f5, 0 0 30px #000000, 0 0 40px #000000, 
-                 0 0 50px #143964, 0 0 60px #355c88, 0 0 70px #b0a5b6;
-  }
-  to {
-    text-shadow: 0 0 20px #eeeeee, 0 0 30px #859bb4, 0 0 40px #455d91, 0 0 50px #bec4c9,
-                 0 0 60px #1a3547, 0 0 70px #112946, 0 0 80px #667992;
-  }
+    from {
+        text-shadow: 0 0 10px #eeeeee, 0 0 20px #faf5f5, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #143964, 0 0 60px #355c88, 0 0 70px #b0a5b6;
+    }
+    to {
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #859bb4, 0 0 40px #455d91, 0 0 50px #bec4c9, 0 0 60px #1a3547, 0 0 70px #112946, 0 0 80px #667992;
+    }
 }
+
 #box1 a {
-  
-  text-decoration: none;
-  color: rgb(132, 156, 168);
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+    text-decoration: none;
+    color: rgb(132, 156, 168);
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
-#box1 a :hover{
-  color: #102f47;
-
+#box1 a :hover {
+    color: #102f47;
 }
+
 
 /*--------registration page--------------------------*/
 
-#anim{
-  padding: 1%;
-
+#anim {
+    padding: 1%;
 }
 
-.rb{
-
-  padding: 1%;
-  width: 60%;
-  
-}
-#text, li{
-  color: rgb(155, 190, 223);
-  text-align: center;
-  font-family: 'Courier New', Courier, monospace;
-
-}
-h3{
-  color: rgb(155, 190, 223);
-  text-shadow:  0 0 10px #8d939c, 0 0 40px  #344553 , 0 0 80px #50707a;
+.rb {
+    padding: 1%;
+    width: 60%;
 }
 
-#link{
-  font-size: 2rem;
-  font-family: 'Courier New', Courier, monospace;
-  color: white;
-  text-decoration: none;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-
+#text,
+li {
+    color: rgb(155, 190, 223);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
+
+h3 {
+    color: rgb(155, 190, 223);
+    text-shadow: 0 0 10px #8d939c, 0 0 40px #344553, 0 0 80px #50707a;
+}
+
+#link {
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-decoration: none;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
 /*--------About Us--------*/
 
 article {
-  /*  leverage cascade for cross-browser gradients  */
-  background: radial-gradient(
-    rgb(255, 255, 255), 
-    hsl(200 20% 60%) 
-  ) fixed;
-  background: conic-gradient(
-    rgb(255, 255, 255), 
-    hsl(200 20% 60%), 
-    rgb(255, 255, 255) 
-  ) fixed;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} 
+    /*  leverage cascade for cross-browser gradients  */
+    background: radial-gradient( rgb(255, 255, 255), hsl(200 20% 60%)) fixed;
+    background: conic-gradient( rgb(255, 255, 255), hsl(200 20% 60%), rgb(255, 255, 255)) fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .about {
-  background:rgb(8, 39, 68);
-  min-block-size: 0vh;
-  min-inline-size: 100%;
-  box-sizing: border-box;
-  display: grid;
-  place-content: top;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: min(200%, 5vmin);
-  margin:0;
+    background: rgb(8, 39, 68);
+    min-block-size: 0vh;
+    min-inline-size: 100%;
+    box-sizing: border-box;
+    display: grid;
+    place-content: top;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: min(200%, 5vmin);
+    margin: 0;
 }
 
 .text {
-
- /*  margin-lefft: 0; */
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 50px;
-  line-height: 1.1;
-  max-inline-size: 15ch;
-  margin: auto;
-  text-align: center;
+    /*  margin-lefft: 0; */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    line-height: 1.1;
+    max-inline-size: 15ch;
+    margin: auto;
+    text-align: center;
 }
 
 .content {
-  width:60%;
-  font-family: 'Courier New', Courier, monospace;
-  /* margin-top: 200vmin; */
-  padding-top: 80px;
-  text-align: left;
-  line-height: 1.00;
-  max-inline-size:100%;
-  font-size: 25px;
-  float:left;
-  margin: auto;
+    width: 60%;
+    font-family: 'Courier New', Courier, monospace;
+    /* margin-top: 200vmin; */
+    padding-top: 80px;
+    text-align: left;
+    line-height: 1.00;
+    max-inline-size: 100%;
+    font-size: 25px;
+    float: left;
+    margin: auto;
 }
 
 canvas {
-  display: block;
-  vertical-align: bottom;
+    display: block;
+    vertical-align: bottom;
 }
+
 
 /* ---- particles.js container ---- */
 
 #particles-js {
-  position: absolute;
-  width: 100%;
-  height: 700px;
-  background-color: rgb(8, 39, 69);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    background-color: rgb(8, 39, 69);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 10;
 }
 
-@media screen and (max-width : 400px) {
-  .content{
-    text-align: center;
-    width: 71%;
-  }
+@media screen and (max-width: 400px) {
+    .content {
+        text-align: center;
+        width: 71%;
+    }
 }
+
 #inside {
-  position: absolute; 
-  z-index: 10;
-  
+    position: absolute;
+    z-index: 10;
+}
+
+.about-logo {
+    margin-left: 60%;
+    width: 30%;
+    padding-top: 40px
 }
