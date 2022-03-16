@@ -6,7 +6,7 @@ body{
     background-attachment: fixed; 
 }
 footer{
-  background-color: rgb(18, 44, 66);
+  background-color:transparent;
   text-align: center;
   color: white;
   position: relative;

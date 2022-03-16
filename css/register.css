@@ -1,17 +1,120 @@
+html {
+    block-size: 100%;
+    inline-size: 100%;
+    text-align: center;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: rgb(8, 39, 68);
+    overflow-x: hidden;
+}
 #anim {
     padding: 1%;
     margin-left: 5rem;
 }
+#heading {
+    letter-spacing: 5px;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    width: 100%;
+    height: 0px;
+    text-align: center;
+    outline: none;
+    color: rgb(155, 190, 223);
+    text-shadow: 0 0 10px #8d939c, 0 0 40px #344553, 0 0 80px #50707a;
+}
+#head2 {
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+   
+}
+
 .mainpage{
     
+    padding: 4%;
         box-shadow: 0 0 10px #698399, 0 0 40px #576d80, 0 0 80px #407daf;
         transition-delay: 0.75s;
-        height: 120vh;
-        border-radius: 3%;
+        height: 130vh;
+        border-radius: 15px;
         background-color: rgb(14, 28, 49);
         align-items: center;
-    
 }
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+   
+  }
+  .topnav {
+    width: 100%;
+    height: 70px;
+    border-radius: 15px;
+    background-color: rgb(14, 28, 49);
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    /*border: 2px solid white;*/
+  }
+
+.topnav a {
+    float: right;
+    display: block;
+    color: rgb(155, 190, 223);
+    text-shadow: 0 0 10px #8d939c, 0 0 40px #344553, 0 0 80px #50707a;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    height: 30px;
+    text-align: end;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  #box1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(155, 190, 223);
+    font-size: large;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#box1 a {
+    text-decoration: none;
+    color: rgb(7, 22, 39);
+    background-color:rgb(155, 190, 223);
+    padding: 1%;
+    border-radius: 15px;
+    padding-right: 10px;
+}
+
+#box1 a :hover {
+   text-decoration: underline  
+}
+
+.about {
+    padding: 3%;
+    place-content: top;
+    font-family: 'Courier New', Courier, monospace;
+}
+.d{
+margin-left: 5%;
+}
+.topnav a:hover {
+    background-color: rgb(155, 190, 223);
+    color: black;
+  }
+  
+.topnav a.active {
+    background-color: rgb(14, 28, 49);
+    color: white;
+  }
+
+.topnav .icon {
+    display: none;
+  }
 
 .rb {
     padding: 1%;
@@ -23,7 +126,7 @@
 
 #text,
 li {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: rgb(231, 236, 241);
     font-family: 'Courier New', Courier, monospace;
 }
@@ -35,45 +138,30 @@ h3 {
     text-shadow: 0 0 10px #8d939c, 0 0 40px #344553, 0 0 80px #50707a;
 }
 
-#link {
-    font-size: 1rem;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    text-transform: uppercase;
-    text-decoration: underline;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-}
-#link:hover{
-    font-size: 2rem;
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(50, 72, 116);
-    background-color: white;
-}
-#navbar {
-    display: flex;
-    justify-content: center;
-    transition: all 0.3s;
-}
-
-
-/* #navbar ul li:hover {
-    transform: scale(1.1);
-} */
-
 .register-content {
     margin-top: 5rem;
     display: flex;
     color: rgb(155, 190, 223);
 }
-
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #eeeeee, 0 0 20px #faf5f5, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #143964, 0 0 60px #355c88, 0 0 70px #b0a5b6;
+    }
+    to {
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #859bb4, 0 0 40px #455d91, 0 0 50px #bec4c9, 0 0 60px #1a3547, 0 0 70px #112946, 0 0 80px #667992;
+    }
+}
 @media screen and (max-width: 600px) {
     body {
         overflow-x: hidden;
+        padding: 3%;
     }
-    #navbar {
+    #topnav {
         flex-direction: column;
+        width: 100%;
+    }
+    .d{
+        width: 0;
     }
     .register-content {
         flex-direction: column;
@@ -88,11 +176,18 @@ h3 {
         margin-left: 2rem;
     }
     .mainpage{
+        width: 500px;
         padding: 4%;
-        height: 170vh;
+        height: 160vh;
 
     }
-    
+    .dot{
+        display: none;
+    }
+    .topnav a {
+        font-size: 1rem;
+        }
+       
     .rb {
         padding: 1%;
         width: 90%;
@@ -100,63 +195,13 @@ h3 {
     }
     #text,
 li {
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 h3 {
     font-size: 1.4rem;
     
 }
 
-    #link {
-        font-size: 2rem;
-        font-family: 'Courier New', Courier, monospace;
-        color: white;
-        text-decoration: none;
-        -webkit-animation: glow 1s ease-in-out infinite alternate;
-        -moz-animation: glow 1s ease-in-out infinite alternate;
-        animation: glow 1s ease-in-out infinite alternate;
-    }
-    #navbar li{
-    padding: 20px;
-    display: inline;
-    list-style-type: none;
-    position: relative;
-    font-size: 0.5em;
-    letter-spacing: 6px;
-    animation: none;
-    width: 100%;
-    text-align: center;
+   
+    
 }
-}
-.topnav {
-    background-color: transparent;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Add an active class to highlight the current page */
-  .topnav a.active {
-    background-color: transparent;
-    color: white;
-  }
-  
-  /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
-    display: none;
-  }
