@@ -1,12 +1,12 @@
 body{
     /* background-image: url("background.jpg"); */
-    background-color: rgb(8, 39, 68) !important;
+    background-color: rgb(22, 56, 85) !important;
     /* background-repeat: no-repeat;
     background-size: cover; */
     background-attachment: fixed; 
 }
 footer{
-  background-color: black;
+  background-color: rgb(18, 44, 66);
   text-align: center;
   color: white;
   position: relative;
@@ -22,27 +22,33 @@ footer{
 #particles-js{
   height: 200%;
   width: 100%;
-  /* background-color: rgb(8, 39, 68) !important; */
+
 }
 .a{
-
+  background-color: #081f35;
   width: 60vw;
   color: white;
-  box-shadow: 0px 0px 20px 2px #0ff;
-  /* background-color: rgba(255, 255, 255, 0); */
+  border-radius: 15px;
+  box-shadow: 0 0 10px #698399, 0 0 40px #576d80, 0 0 80px #407daf;
   position: relative;
   left: 20vw;
   top: 10vh;
   margin-top: 5vh;
+  padding: 5%;
   text-align: center;
 }
 .img{
   border-radius: 50%;
-  height: 250px;
-  width: 250px;
+  height: 100px;
+  width: 100px;
  
 }
+p{
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+}
 .content{
+  
   position: relative;
   z-index: 1;
 }

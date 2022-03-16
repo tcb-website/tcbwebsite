@@ -1,0 +1,130 @@
+#anim {
+    padding: 1%;
+    margin-left: 5rem;
+}
+.mainpage{
+    
+        box-shadow: 0 0 10px #698399, 0 0 40px #576d80, 0 0 80px #407daf;
+        transition-delay: 0.75s;
+        height: 120vh;
+        border-radius: 3%;
+        background-color: rgb(14, 28, 49);
+        align-items: center;
+    
+}
+
+.rb {
+    padding: 1%;
+    width: 60%;
+    font-size: 1rem;
+    color: rgb(231, 236, 241);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#text,
+li {
+    font-size: 1rem;
+    color: rgb(231, 236, 241);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3 {
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(223, 230, 236);
+    text-shadow: 0 0 10px #8d939c, 0 0 40px #344553, 0 0 80px #50707a;
+}
+
+#link {
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+#link:hover{
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(50, 72, 116);
+    background-color: white;
+}
+#navbar {
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+
+/* #navbar ul li:hover {
+    transform: scale(1.1);
+} */
+
+.register-content {
+    margin-top: 5rem;
+    display: flex;
+    color: rgb(155, 190, 223);
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+    #navbar {
+        flex-direction: column;
+    }
+    .register-content {
+        flex-direction: column;
+        margin: auto;
+    }
+    #text-register {
+        margin-left: 1rem;
+        font-size: 2rem;
+    }
+
+    #anim{
+        margin-left: 2rem;
+    }
+    .mainpage{
+        padding: 4%;
+        height: 160vh;
+
+    }
+    
+    .rb {
+        padding: 1%;
+        width: 90%;
+        font-size: 2rem;
+    }
+    #text,
+li {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 2rem;
+    
+}
+
+    #link {
+        font-size: 2rem;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        text-decoration: none;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+    #navbar li{
+    padding: 20px;
+    display: inline;
+    list-style-type: none;
+    position: relative;
+    font-size: 0.5em;
+    letter-spacing: 6px;
+    animation: none;
+    width: 100%;
+    text-align: center;
+}
+}

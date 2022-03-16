@@ -18,10 +18,14 @@ body {
 .main {
     box-shadow: 0 0 10px #698399, 0 0 40px #576d80, 0 0 80px #407daf;
     transition-delay: 0.75s;
-    height: 100vh;
+    height: 120vh;
     border-radius: 3%;
     background-color: rgb(14, 28, 49);
     align-items: center;
+}
+#logo{
+    width: 100px;
+    height: 100px;
 }
 
 #navbar li {
@@ -38,7 +42,7 @@ body {
 
 #navbar a {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
+    font-size: 25px;
     text-decoration: none;
     text-align: center;
     color: rgb(155, 190, 223);
@@ -54,7 +58,7 @@ body {
 
 #heading {
     position: relative;
-    letter-spacing: 17px;
+    letter-spacing: 10px;
     font-size: 60px;
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
@@ -104,6 +108,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     color: rgb(155, 190, 223);
     font-size: medium;
+    background-color: #041320;
     text-transform: uppercase;
     text-align: center;
     border: 11px solid rgb(153, 177, 199);
@@ -115,18 +120,31 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    .home-page {
+        padding: 0;
+    }
+    
+    #logo{
+        display: none;
+    }
+    .main {
+        box-shadow: 0 0 10px #698399, 0 0 40px #576d80, 0 0 80px #407daf;
+        transition-delay: 0.75s;
+        height: 60vh;
+        border-radius: 3%;
+        background-color: rgb(14, 28, 49);
+        align-items: center;
+    }
     #box1 {
         /* margin: 0 auto; */
         width: 70%;
-        right: -2.5vh;
+        right: -0.5vh;
     }
     .box {
         flex-direction: column;
     }
-    #img {
-        display: none;
-        /* width: 40vw;
-        height: 40vh; */
+    #responsive-img img {
+       display: none;
     }
     ul li {
         font-size: 10px;
@@ -163,40 +181,65 @@ body {
 #box1 a :hover {
     color: #102f47;
 }
+/*-----------footer------------------*/
+
+@charset "UTF-8";
+
+.svg-inline--fa {
+  vertical-align: -0.200em;
+}
+
+.rounded-social-buttons {
+  text-align: center;
+}
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 3px;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
 
 
+.rounded-social-buttons .social-button.linkedin {
+  background: #007bb5;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+  color: #007bb5;
+  background: #fefefe;
+  border-color: #007bb5;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #125688;
+}
+
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+  color: #125688;
+  background: #fefefe;
+  border-color: #125688;
+}
 /*--------registration page--------------------------*/
-
-#anim {
-    padding: 1%;
-    margin-left: 5rem;
-}
-
-.rb {
-    padding: 1%;
-    width: 60%;
-}
-
-#text,
-li {
-    color: rgb(155, 190, 223);
-    font-family: 'Courier New', Courier, monospace;
-}
-
-h3 {
-    color: rgb(155, 190, 223);
-    text-shadow: 0 0 10px #8d939c, 0 0 40px #344553, 0 0 80px #50707a;
-}
-
-#link {
-    font-size: 2rem;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    text-decoration: none;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-}
 
 
 /*--------About Us--------*/
