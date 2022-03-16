@@ -130,7 +130,7 @@ body {
     .main {
         box-shadow: 0 0 10px #698399, 0 0 40px #576d80, 0 0 80px #407daf;
         transition-delay: 0.75s;
-        height: 60vh;
+        height: 90vh;
         border-radius: 3%;
         background-color: rgb(14, 28, 49);
         align-items: center;
@@ -306,7 +306,7 @@ canvas {
     z-index: 10;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .content {
         text-align: center;
         width: 71%;
@@ -322,4 +322,53 @@ canvas {
     margin-left: 60%;
     width: 30%;
     padding-top: 40px
+}
+/* hamburger */
+.topnav {
+    background-color: rgb(14, 28, 49);
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: rgb(14, 28, 49);
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  footer{
+  background-color: transparent;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 20vh;
+}
+.footer_img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: relative;
+  top: 2vh;
 }

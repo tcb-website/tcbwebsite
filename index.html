@@ -8,14 +8,23 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
 <body>
     <section class="home-page">
         <div class="main">
-
-            <table id="navbar" width="100%" align="center">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active">Home</a>
+                <a href="achievement.html">Achievements</a>
+                <a href="register.html">Register</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+            <!-- <table id="navbar" width="100%" align="center">
                 <td><a href="index.html"><img src="images/only structure.png" id="logo"></a></td>
                 <td align="center">
                     <ul>
@@ -25,7 +34,7 @@
                     </ul>
                     <hr width="90%">
                 </td>
-            </table>
+            </table> -->
             <h1 align="center" id="heading">THE CODEBREAKERS</h1>
 
 
@@ -100,12 +109,10 @@
                 <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 
 
-<footer>
-  <div class="rounded-social-buttons">
-                    <a class="social-button linkedin" href="https://www.linkedin.com/company/thecodebreakers-rcoem/mycompany/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a class="social-button instagram" href="https://www.instagram.com/thecodebreakers/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-</footer>
+                <footer>
+                    <img src="images/logo.jpg" alt="" class="footer_img"> <br> <br> Copyright © 2022
+                    <br> The CodeBreakers
+                </footer>
         </div>
 
        
@@ -113,7 +120,16 @@
         
     </div>
     <script src="js/particle.js"></script>
-
+<script>
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 
 </html>

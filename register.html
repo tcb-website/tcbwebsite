@@ -9,15 +9,17 @@
 
 <body style="padding: 4%;">
 <div class="mainpage">
-    <div id="navbar">
-        <ul>
-            <li><a href="index.html" class="home"><span>Home</span></a></li>
-            <hr width="100%">
-        </ul>
-    </div>
+    
 
-    <h1 id="heading">Registration! </h1>
-  
+    <h1 id="heading">Registration</h1>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="achievement.html">Achievements</a>
+        <!-- <a href="register.html">Register</a> -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
 
 
     <div class="register-content">
@@ -41,5 +43,14 @@
     </div>
 </div>
 </body>
-
+<script>
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </html>
