@@ -184,9 +184,9 @@ margin-left: 15px;
     .main {
         box-shadow: 0 0 10px #698399, 0 0 40px #576d80, 0 0 80px #407daf;
         transition-delay: 0.75s;
-        height: 70vh;
+        height: 90vh;
         border-radius: 3%;
-        width: 115vw;
+        width: 135vw;
         background-color: rgb(14, 28, 49);
         align-items: center;
     }
