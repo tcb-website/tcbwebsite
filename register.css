@@ -1,0 +1,26 @@
+#navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.register-content {
+    margin-top: 5rem;
+    display: flex;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+    #navbar {
+        flex-direction: column;
+    }
+    .register-content {
+        flex-direction: column;
+        margin: auto;
+    }
+    #text-register {
+        margin-left: 1rem;
+        font-size: 2rem;
+    }
+}
