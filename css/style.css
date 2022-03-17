@@ -20,11 +20,12 @@ body {
     padding: 1%;
     box-shadow: 0 0 10px #698399, 0 0 40px #576d80, 0 0 80px #407daf;
     transition-delay: 0.75s;
-    height: 120vh;
     border-radius: 3%;
     background-color: #0e1c31;
     align-items: center;
 }
+
+
 
 /**************************NAVBAR**********************************************/
 .dot {
@@ -184,9 +185,9 @@ margin-left: 15px;
     .main {
         box-shadow: 0 0 10px #698399, 0 0 40px #576d80, 0 0 80px #407daf;
         transition-delay: 0.75s;
-        height: 90vh;
+        height: 60vh;
         border-radius: 3%;
-        width: 135vw;
+        width: 100%;
         background-color: rgb(14, 28, 49);
         align-items: center;
     }
@@ -211,12 +212,13 @@ margin-left: 15px;
     .dot{
         display: none;
     }
-    .about{
-        padding: 0;
-        width: 500px;
+    .about {
+        padding-left: 1rem;
+        width: 93%;
     }
     .topnav a {
-    font-size: large;
+        font-size: 1.2rem;
+        font-weight: 1000;
     }
    
     #heading {
@@ -230,5 +232,215 @@ margin-left: 15px;
     .content {
         text-align: center;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home-page {
+        padding: 2%;
+        width: 500px;
+    }
+    
+    #logo{
+        display: none;
+    }
+    .main {
+        box-shadow: 0 0 10px #698399, 0 0 40px #576d80, 0 0 80px #407daf;
+        transition-delay: 0.75s;
+        height: 60vh;
+        border-radius: 3%;
+        width: 83%;
+        background-color: rgb(14, 28, 49);
+        align-items: center;
+    }
+    #left {
+        margin-left: 0.8rem;
+        width: 79%;
+        color: white;
+        padding: 2%;
+        border: 2px solid white;
+        border-radius: 15px;
+    }
+    #logo2{
+        display: none;
+    }
+    .d{
+        width: 0;
+    }
+    #box1 {
+        /* margin: 0 auto; */
+        width: 100%;
+    }
+    .dot{
+        display: none;
+    }
+    .about{
+        padding: 0;
+        width: 500px;
+    }
+    .topnav a {
+        font-size: 0.9em;
+        font-weight: 1000;
+        height: 15px;
+    }
+   
+    #heading {
+        font-size: 1.28rem;
+        width: 100%;
+    }
+  
+    .content {
+        text-align: center;
+    }
+    .content {
+        text-align: center;
+        width: 100%;
+    }
+    span{
+        padding: 2rem;
+    }
+    footer{
+        position: relative;
+        right: 8%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .home-page {
+        padding: 2%;
+        width: 500px;
+    }
+    
+    #logo{
+        display: none;
+    }
+    .main {
+        box-shadow: 0 0 10px #698399, 0 0 40px #576d80, 0 0 80px #407daf;
+        transition-delay: 0.75s;
+        height: 65vh;
+        border-radius: 3%;
+        width: 72%;
+        background-color: rgb(14, 28, 49);
+        align-items: center;
+    }
+    #left {
+        margin-left: 0.5rem;
+        width: 68%;
+        color: white;
+        padding: 2%;
+        border: 2px solid white;
+        border-radius: 15px;
+    }
+    #logo2{
+        display: none;
+    }
+    .d{
+        width: 0;
+    }
+    #box1 {
+        /* margin: 0 auto; */
+        width: 100%;
+    }
+    .dot{
+        display: none;
+    }
+    .about{
+        padding: 0;
+        width: 500px;
+    }
+    .topnav a {
+        font-size: 1em;
+        font-weight: 1000;
+        height: 15px;
+    }
+   
+    #heading {
+        font-size: 1.28rem;
+        width: 100%;
+    }
+  
+    .content {
+        text-align: center;
+    }
+    .content {
+        text-align: center;
+        width: 100%;
+    }
+    span{
+        padding: 2rem;
+    }
+    footer{
+        position: relative;
+        right: 12%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .home-page {
+        padding: 2%;
+        width: 500px;
+    }
+    
+    #logo{
+        display: none;
+    }
+    .main {
+        box-shadow: 0 0 10px #698399, 0 0 40px #576d80, 0 0 80px #407daf;
+        transition-delay: 0.75s;
+        height: 70vh;
+        border-radius: 3%;
+        width: 53%;
+        background-color: rgb(14, 28, 49);
+        align-items: center;
+    }
+    #left {
+        margin-left: 0;
+        width: 52%;
+        color: white;
+        padding: 2%;
+        border: 2px solid white;
+        border-radius: 15px;
+    }
+    #logo2{
+        display: none;
+    }
+    .d{
+        width: 0;
+    }
+    #box1 {
+        /* margin: 0 auto; */
+        width: 100%;
+    }
+    .dot{
+        display: none;
+    }
+    .about{
+        padding: 0;
+        width: 500px;
+    }
+    .topnav a {
+        font-size: 0.9em;
+        font-weight: 1000;
+        height: 15px;
+    }
+   
+    #heading {
+        font-size: 1.28rem;
+        width: 100%;
+    }
+  
+    .content {
+        text-align: center;
+    }
+    .content {
+        text-align: center;
+        width: 100%;
+    }
+    span{
+        padding: 2rem;
+    }
+    footer{
+        position: relative;
+        right: 6.6rem;
     }
 }
