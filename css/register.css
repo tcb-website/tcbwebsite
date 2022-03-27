@@ -5,6 +5,7 @@ html {
 }
 
 body {
+    padding: 4%;
     scroll-behavior: smooth;
     background-color: rgb(8, 39, 68);
     overflow-x: hidden;
@@ -154,7 +155,7 @@ h3 {
 @media screen and (max-width: 600px) {
     body {
         overflow-x: hidden;
-        padding: 3%;
+        padding: 0%;
     }
     #topnav {
         flex-direction: column;

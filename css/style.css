@@ -174,7 +174,7 @@ margin-left: 15px;
 
 @media screen and (max-width: 600px) {
     .home-page {
-        padding: 2%;
+        padding: 0;
         width: 500px;
     }
     
@@ -185,14 +185,14 @@ margin-left: 15px;
         box-shadow: 0 0 10px #698399, 0 0 40px #576d80, 0 0 80px #407daf;
         transition-delay: 0.75s;
         height: 90vh;
-        border-radius: 3%;
-        width: 135vw;
+        border-radius: 4%;
+        width: 97%;
         background-color: rgb(14, 28, 49);
         align-items: center;
     }
     #left {
         margin-left: 0;
-        width: 97%;
+        width: 94%;
         color: white;
         padding: 2%;
         border: 2px solid white;
